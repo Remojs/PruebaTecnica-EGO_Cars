@@ -1,0 +1,306 @@
+.container{
+    display: none;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.containerMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin: 3rem 0;
+    border-bottom: 1px solid var(--gray);
+    width: 350px;
+}
+
+ .containerMobile select {
+    flex: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #373737;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.08px;
+    border: none;
+    border-radius: 0px;
+}
+
+
+
+.containerMobile select option {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    color: #333;
+}
+
+.span {
+    font-weight: 600;
+}
+
+.containerMobile select:focus {
+    outline: none;
+}
+
+.containerMobile select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 4' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.319983 0.855702C0.320583 0.670864 0.434892 0.504919 0.609505 0.43447C0.784119 0.364167 0.985134 0.403126 1.11924 0.532894L3.1327 2.49655L5.14615 0.532894C5.33187 0.377349 5.60969 0.387601 5.7825 0.556914C5.95592 0.725788 5.96657 0.996894 5.80711 1.17836L3.46318 3.46688C3.28031 3.64424 2.98509 3.64424 2.80222 3.46688L0.458293 1.17836C0.370387 1.09312 0.320583 0.976975 0.319983 0.855702Z' fill='%23333'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 12px;
+}
+
+.sortMenu {
+    position: absolute;
+    width: 200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+  
+  .sortItem {
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: -0.1px;
+    list-style: none;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .sortItem:last-child{
+    border-bottom: none;
+  }
+  
+  
+  .sortItem.active {
+    font-weight: bold;
+    background: #e0e0e0;
+  }
+  
+  .ordenar{
+    cursor: pointer ;
+  }
+
+@media (min-width: 1024px) {
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        border-bottom: 1px solid var(--gray);
+        margin: 5rem 0;
+        padding-bottom: 1rem;
+    }
+
+    .filter, .filterControl{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .filterTitle p{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+    }
+
+    .filterControl p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+        cursor: pointer;
+    }
+
+    .ordenar{
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .ordenar h1{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+    }
+
+    .svg{
+        margin-top: 5px;
+    }
+
+    .containerMobile{
+        display: none;
+    }
+
+    .sortMenu {
+        top: 16rem;
+        left: 71.5vw;
+      }
+}
+
+@media (min-width: 1440px) {
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        border-bottom: 1px solid var(--gray);
+        margin: 5rem 0;
+        padding-bottom: 1rem;
+    }
+
+    .filter, .filterControl{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .filterTitle p{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+    }
+
+    .filterControl p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+        cursor: pointer;
+    }
+
+    .ordenar{
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .ordenar h1{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+    }
+
+    .svg{
+        margin-top: 5px;
+    }
+
+    
+    .containerMobile{
+        display: none;
+    }
+
+    .sortMenu {
+        top: 16rem;
+        left: 76.5vw;
+      }
+}
+
+@media (min-width: 1920px) {
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 70%;
+        border-bottom: 1px solid var(--gray);
+        margin: 5rem 0;
+        padding-bottom: 1rem;
+    }
+
+    .filter, .filterControl{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .filterTitle p{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+    }
+
+    .filterControl p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+        cursor: pointer;
+    }
+
+    .ordenar{
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .ordenar h1{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.08px;
+    }
+
+    .svg{
+        margin-top: 5px;
+    }
+
+    
+    .containerMobile{
+        display: none;
+    }
+
+    
+    .sortMenu {
+        top: 19rem;
+        left: 75vw;
+      }
+}

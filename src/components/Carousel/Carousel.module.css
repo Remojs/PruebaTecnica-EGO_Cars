@@ -1,0 +1,379 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+.carouselElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselWrapper {
+  width: 99vw;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton {
+  display: none;
+}
+
+.navButton:focus {
+  outline: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.activeDot {
+  background-color: #4a4a4a;
+  width: 40px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.galleryCard {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.galleryCard img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.galleryCard h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.galleryCard p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+@media (min-width: 768px) {
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    margin-top: 4rem;
+  }
+  
+}
+
+
+@media (min-width: 1024px) {
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-color: #f7f7f7;
+  }
+
+  .carouselWrapper {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel {
+    width: 100vw;
+    margin-left: 4.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  /* Botones de navegación en los extremos */
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-120%);
+    background: #ffffffb0;
+    color: #000000;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+    width: 45px;
+    height: 110px;
+  }
+
+  .navButton.left {
+    left: 10px;
+  }
+
+  .navButton.right {
+    right: 10px;
+  }
+
+  /* Efecto de desenfoque en los extremos */
+  .blurLeft,
+  .blurRight {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .blurLeft {
+    left: 0;
+    background: linear-gradient(to right, #ffffffb0, transparent);
+  }
+ 
+  .blurRight {
+    right: 0;
+    background: linear-gradient(to left, #ffffffb0, transparent);
+  }
+}
+
+@media (min-width: 1440px) {
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-color: #f7f7f7;
+  }
+
+  .carouselWrapper {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel {
+    width: 100vw;
+    margin-left: 4.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  /* Botones de navegación en los extremos */
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-98%);
+    background: #ffffffb0;
+    color: #000000;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    transition: background 0.2s;
+    width: 45px;
+    height: 165px;
+  }
+
+  .navButton.left {
+    left: 10px;
+  }
+
+  .navButton.right {
+    right: 10px;
+  }
+
+  .navButton:hover {
+    background: #c4c4c4cc;
+  }
+
+  /* Efecto de desenfoque en los extremos */
+  .blurLeft,
+  .blurRight {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .blurLeft {
+    left: 0;
+    background: linear-gradient(to right, #ffffffb0, transparent);
+  }
+ 
+  .blurRight {
+    right: 0;
+    background: linear-gradient(to left, #ffffffb0, transparent);
+  }
+}
+
+@media (min-width: 1920px) {
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    background-color: #f7f7f7;
+  }
+
+  .carouselWrapper {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel {
+    width: 100vw;
+    margin-left: 4.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  /* Botones de navegación en los extremos */
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-98%);
+    background: #ffffffb0;
+    color: #000000;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    transition: background 0.2s;
+    width: 45px;
+    height: 165px;
+  }
+
+  .navButton.left {
+    left: 10px;
+  }
+
+  .navButton.right {
+    right: 10px;
+  }
+
+  .navButton:hover {
+    background: #c4c4c4cc;
+  }
+
+  /* Efecto de desenfoque en los extremos */
+  .blurLeft,
+  .blurRight {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .blurLeft {
+    left: 0;
+    background: linear-gradient(to right, #ffffffb0, transparent);
+  }
+ 
+  .blurRight {
+    right: 0;
+    background: linear-gradient(to left, #ffffffb0, transparent);
+  }
+}

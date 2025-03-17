@@ -1,0 +1,45 @@
+
+.carBox{
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+  }
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .carBox{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media (min-width: 1440px) {
+    .grid {
+        width: 80%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1920px) {
+    .grid {
+        width: 70%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

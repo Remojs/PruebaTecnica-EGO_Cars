@@ -1,8 +1,35 @@
 # Prueba Técnica - React  
 
-En esta prueba técnica, dividiré el desarrollo en días y procesos diferenciados. El objetivo es escribir un código de alta calidad en el menor tiempo posible, sin comprometer su escalabilidad y mantenimiento.  
+## Requisitos previos
 
-Seguiré los principios SOLID, poniendo especial énfasis en **DRY** (*Don't Repeat Yourself*) y **KISS** (*Keep It Simple, Stupid*) para lograr un código simplificado, reutilizable y fácil de entender.  
+Asegúrate de tener instalados los siguientes requisitos antes de continuar:
+
+- [Node.js](https://nodejs.org/) (versión recomendada: LTS)
+- [npm](https://www.npmjs.com/) (viene con Node.js)
+
+## Instalación
+
+Sigue estos pasos para instalar las dependencias necesarias:
+
+```sh
+npm install
+```
+
+## Ejecución en modo desarrollo
+
+Para iniciar la aplicación en modo de desarrollo, ejecuta el siguiente comando:
+
+```sh
+npm run dev
+```
+
+Esto iniciará un servidor de desarrollo y la aplicación estará disponible en [http://localhost:3000](http://localhost:3000) o el puerto que indique la consola.
+
+
+
+##
+
+En esta prueba técnica, dividiré el desarrollo en días y procesos diferenciados. El objetivo es escribir un código de alta calidad en el menor tiempo posible, sin comprometer su escalabilidad y mantenimiento.  
 
 ## Enfoque de desarrollo  
 
@@ -28,9 +55,19 @@ src/
 │── pages/ # Vistas principales (Home, Details, etc.) 
 │── services/ # Llamadas a la API 
 │── context/ # Gestión de estado con Zustand 
-│── hooks/ # Custom hooks (si es necesario)
+│── data/ # Informacion de la app estatica
+│── assets/ # Imagenes y svg de la app
 ```
 
 ## Estilos  
 
 Para los estilos, utilizaré **CSS Modules**, ya que permiten optimizar los nombres de clase sin necesidad de estructuras demasiado verbosas, facilitando el mantenimiento y la escalabilidad del diseño.  
+
+
+##
+
+## Tecnologías utilizadas
+
+- React
+- Vite/Webpack (dependiendo del setup)
+- JavaScript/TypeScript (según la configuración del proyecto)

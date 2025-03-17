@@ -1,0 +1,111 @@
+  
+.navbar{
+    width: 99vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid var(--gray);
+}
+
+.navMenu, .menu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navMenu{
+    margin-right: 15px;
+}
+
+
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.navbarSection, .menuWord{
+    display: none;
+  }
+
+
+
+  @media (min-width: 768px) {
+
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar {
+        position: relative;
+    }
+    
+    .navbarSection, .menuWord{
+        display: flex;
+      }
+
+      .navbarSectionBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 3rem;
+        margin-left: 20px;
+      }
+
+      .tab {
+        padding: 10px;
+        cursor: pointer;
+        height: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 6.5rem;
+        font-size: 14px;
+      }
+
+      .tab:last-child {
+        padding: 10px;
+        cursor: pointer;
+        height: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 9rem;
+        font-size: 14px;
+      }
+      
+      .active {
+        color: var(--red);
+        border-bottom: 3px solid var(--red);
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0px;
+      }
+
+      .navMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: .5rem;
+      }
+
+      .menuWord{
+        font-size: 14px;
+
+      }
+      
+  }
+  
+  @media (min-width: 1440px) {
+
+  }
+  
+  @media (min-width: 1920px) {
+    .navMenu{
+      margin-right: 2rem;
+    }
+  }
+  

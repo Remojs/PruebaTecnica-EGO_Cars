@@ -1,0 +1,26 @@
+
+:root {
+  /*Variables de color del proyecto*/
+--gray: #CCCCCC;
+--light-gray: #E9E9E9;
+--background-gray: #EFEEEF;
+--red: #D0021B;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body { /*Fuenta general para toda la app*/
+  font-family: "Montserrat";
+}
+
+
+/*Normalize*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
