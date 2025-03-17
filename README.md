@@ -69,5 +69,6 @@ Para los estilos, utilizaré **CSS Modules**, ya que permiten optimizar los nomb
 ## Tecnologías utilizadas
 
 - React
-- Vite/Webpack (dependiendo del setup)
-- JavaScript/TypeScript (según la configuración del proyecto)
+- Vite/Webpack
+- JavaScript
+- CSS Modules
